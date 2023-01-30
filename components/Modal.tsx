@@ -190,6 +190,9 @@ function Modal() {
               <div className="flex h-4 items-center justify-center rounded border border-white/40 px-1.5 text-xs">
                 HD
               </div>
+              <div className='text-blue-500 pl-32 text-2xl font-bold'>
+                   {movie?.title}
+                </div>
             </div>
             <div className="flex flex-col gap-x-10 gap-y-4 font-light md:flex-row">
               <p className="w-5/6">{movie?.overview}</p>

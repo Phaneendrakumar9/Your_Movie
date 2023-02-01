@@ -14,7 +14,7 @@ function Thumbnail({movie}:Props) {
   const [showModal, setShowModal] = useRecoilState(modalState)
     const [currentMovie, setCurrentMovie] = useRecoilState(movieState)
   return (
-    <div className=' relative h-40 min-w-[180px] cursor-pointertransition duration-200
+    <div className=' relative h-46 min-w-[180px] cursor-pointertransition duration-200
     ease-out md:h-38 md:min-w-[260px]  md:hover:scale-105' onClick={() => { 
       setCurrentMovie(movie)
       setShowModal(true)

@@ -27,11 +27,11 @@ function Header() {
     <div>Your Movie</div>
 
         <ul className="hidden space-x-6 md:flex">
-            <li className="headerLink text-lg font-normal">Home</li>
-            <li className="headerLink text-lg font-normal">TV Shows</li>
-            <li className="headerLink text-lg font-normal">Movies</li>
-            <li className="headerLink text-lg font-normal">New & Popular</li>
-            <li className="headerLink text-lg font-normal">My List</li>
+            <li className="headerLink text-lg font-normal md:hover:font-black">Home</li>
+            <li className="headerLink text-lg font-normal md:hover:font-black">TV Shows</li>
+            <li className="headerLink text-lg font-normal md:hover:font-black">Movies</li>
+            <li className="headerLink text-lg font-normal md:hover:font-black">New & Popular</li>
+            <li className="headerLink text-lg font-normal md:hover:font-black">My List</li>
         </ul>
     </div>
 
@@ -40,9 +40,9 @@ function Header() {
        <button className="text-lg font-normal "><SearchIcon className="hidden h-5 w-5 sm:inline"/> Search</button>
        </div>
 
-       {/*<Link href="/notifications">*/}
-       <BellIcon className=" h-6 w-6 hidden lg:inline xl:inline"/>
-       {/*</Link>*/}
+       <Link href="/notifications">
+          <BellIcon className=" h-6 w-6 hidden lg:inline xl:inline"/>
+       </Link>
 
        <ChatAlt2Icon className=" h-6 w-6 hidden lg:inline xl:inline"/>
        {/* <Link href="/account"> */}

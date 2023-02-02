@@ -3,6 +3,8 @@ import Link from "next/link";
 import {useState,useEffect} from 'react';
 import useAuth from "../hooks/useAuth";
 import { ChatAlt2Icon } from "@heroicons/react/outline";
+import BasicMenu from "./BasicMenu";
+
 
 function Header() {
     const [isScrolled,setIsScrolled] = useState(false)
@@ -26,6 +28,8 @@ function Header() {
     <div className="flex items-center space-x-2 md:space-x-10 text-red-600 font-bold text-3xl">
     <div>Your Movie</div>
 
+    <BasicMenu />
+
         <ul className="hidden space-x-6 md:flex">
             <li className="headerLink text-lg font-normal md:hover:font-black">Home</li>
             <li className="headerLink text-lg font-normal md:hover:font-black">TV Shows</li>
@@ -45,14 +49,13 @@ function Header() {
        </Link>
 
        <ChatAlt2Icon className=" h-6 w-6 hidden lg:inline xl:inline"/>
-       {/* <Link href="/account"> */}
+        <Link href="/account">
        <img
-       onClick={logout}
             src="https://bit.ly/3WLLjRt"
             alt=""
             className="cursor-pointer rounded-full h-8 w-8"
           />
-       {/* </Link> */}
+       </Link>
     </div>
     </header>
   )

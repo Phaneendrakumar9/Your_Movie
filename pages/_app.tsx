@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return(
     <RecoilRoot>
       <AuthProvider>
-        <NextNProgress color='red'/>
+        <NextNProgress color='#fe6d2b'/>
            <Component {...pageProps} />
         </AuthProvider> 
     </RecoilRoot>

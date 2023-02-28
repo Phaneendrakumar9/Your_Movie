@@ -29,7 +29,7 @@ function Account({ products }: Props) {
       </Head>
       <header className={`bg-[#141414]`}>
         <Link href="/">
-            <h1 className='font-bold text-red-600 text-3xl'>YOUR MOVIE</h1>
+            <h1 className='font-bold text-[#fe6d2b] text-3xl'>YOUR MOVIE</h1>
         </Link>
         <Link href="/account">
           <img

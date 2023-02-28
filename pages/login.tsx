@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import useAuth from '../hooks/useAuth'
+import img1 from '../public/loginimg.jpg'
 
 interface Inputs {
   email: string
@@ -36,17 +37,17 @@ function Login() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Image
-        src="https://rb.gy/p2hphi"
+        src={img1}
         layout="fill"
         className="-z-10 !hidden opacity-60 sm:!inline"
         objectFit="cover"
         alt=' '
       />
       <h1
-        className="absolute left-4 top-4 cursor-pointer object-contain md:left-10 md:top-6 font-extrabold text-red-700 text-4xl">YOUR MOVIE</h1>
+        className="absolute left-4 top-4 cursor-pointer object-contain md:left-10 md:top-6 font-extrabold text-[#fe6d2b] text-4xl">YOUR MOVIE</h1>
 
       <form
-        className="relative mt-24 space-y-8 rounded bg-black/75 py-10 px-6 md:mt-0 md:max-w-md md:px-14"
+        className="relative mt-24 space-y-8 rounded bg-gray-700/70 py-10 px-6 md:mt-0 md:max-w-md md:px-14"
         onSubmit={handleSubmit(onSubmit)}
       >
         <h1 className="text-4xl font-semibold">Sign In</h1>
@@ -83,7 +84,7 @@ function Login() {
           </label>
         </div>
         <button
-          className="w-full rounded bg-[#E50914] py-3 font-semibold"
+          className="w-full rounded bg-[#fe6d2b] py-3 font-semibold"
           onClick={() => setLogin(true)}
           type="submit"
         >

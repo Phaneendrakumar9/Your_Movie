@@ -36,3 +36,4 @@ import {
   
   export { loadCheckout, goToBillingPortal }
   export default payments
+  

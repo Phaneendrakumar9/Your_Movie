@@ -34,7 +34,7 @@ function Plans({ products }: Props) {
       </Head>
       <header className="border-b border-white/10 bg-[#141414]">
         <Link href="/">
-          <h1 className='text-red-600 font-semibold text-3xl'>YOUR MOVIE</h1>
+          <h1 className='text-[#fe6d2b] font-semibold text-3xl'>YOUR MOVIE</h1>
         </Link>
         <button
           className="text-lg font-medium hover:underline"
@@ -50,15 +50,15 @@ function Plans({ products }: Props) {
         </h1>
         <ul>
           <li className="flex items-center gap-x-2 text-lg">
-            <CheckIcon className="h-7 w-7 text-[#E50914]" /> Watch all you want.
+            <CheckIcon className="h-7 w-7 text-[#fe6d2b]" /> Watch all you want.
             Ad-free.
           </li>
           <li className="flex items-center gap-x-2 text-lg">
-            <CheckIcon className="h-7 w-7 text-[#E50914]" /> Recommendations
+            <CheckIcon className="h-7 w-7 text-[#fe6d2b]" /> Recommendations
             just for you.
           </li>
           <li className="flex items-center gap-x-2 text-lg">
-            <CheckIcon className="h-7 w-7 text-[#E50914]" /> Change or cancel
+            <CheckIcon className="h-7 w-7 text-[#fe6d2b]" /> Change or cancel
             your plan anytime.
           </li>
         </ul>
@@ -82,7 +82,7 @@ function Plans({ products }: Props) {
 
           <button
             disabled={!selectedPlan || isBillingLoading}
-            className={`mx-auto w-11/12 rounded bg-[#E50914] py-4 text-xl shadow hover:bg-[#f6121d] md:w-[420px] ${
+            className={`mx-auto w-11/12 rounded bg-[#fe6d2b] py-4 text-xl shadow hover:bg-[#fe6d2b] md:w-[420px] ${
               isBillingLoading && 'opacity-60'
             }`}
             onClick={subscribeToPlan}

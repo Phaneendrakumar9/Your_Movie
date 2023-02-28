@@ -25,7 +25,7 @@ function Header() {
     },[])
   return (
     <header className={`${isScrolled && 'bg-[#141414]'}`}>
-    <div className="flex items-center space-x-2 md:space-x-10 text-red-600 font-bold text-3xl">
+    <div className="flex items-center space-x-2 md:space-x-10 text-[#fe6d2b] font-bold text-3xl">
     <div>Your Movie</div>
 
     <BasicMenu />
@@ -41,7 +41,8 @@ function Header() {
 
     <div className="flex items-center space-x-4 font-serif text-lg">
        <div>
-       <button className="text-lg font-normal "><SearchIcon className="hidden h-5 w-5 sm:inline"/> Search</button>
+       <Link href="http://localhost:5000/">
+       <button className="text-lg font-normal "><SearchIcon className="hidden h-5 w-5 sm:inline"/> Search</button></Link>
        </div>
 
        <Link href="/notifications">
